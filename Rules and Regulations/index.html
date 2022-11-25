@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>ZeDeN TECH</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!--Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../Home/styles.css">
+	<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">email</span>
+          <a class="btn dropdown-toggle"  role="button" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="material-icons-outlined">account_circle</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="../Profile/index.html">Profile</a></li>
+            <li><a class="dropdown-item" href="../changePassword/index.html">Change Password</a></li>
+            <li><a class="dropdown-item logOut" href="../Login/Signin.html">Log Out</a></li>
+            </ul>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span></span>ZeDeN TECH
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="../Home/index.html">
+              <span class="bx bxs-dashboard"></span>HOME
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="../publication/index.html">
+              <span class="bx bxs-receipt"></span>PUBLICATON
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="../task/index.html">
+              <span class="bx bxs-briefcase"></span>TASKS
+            </a>
+          </li>
+          <li class="sidebar-list-item"> 
+            <a class="btn dropdown-toggle"  role="button" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="bx bxs-notepad"></span>FORM					
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="../Leave Application/index.html">Leave Application</a></li>
+              <li><a class="dropdown-item" href="../resignation/index.html">Resignation</a></li>
+              <li><a class="dropdown-item" href="../Promotion/index.html">Promotion</a></li>
+            </ul>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="../Help/index.html">
+              <span class="bx bxs-help-circle"></span> HELP
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="../Rules and Regulations/index.html">
+              <span class="bx bxs-error"></span>RULES
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="../Calendar/index.html">
+              <span class="bx bxs-calendar"></span>CALENDAR
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+		<div class="container">
+            <h1><img src="../Home/logo.png" alt="">ZeDeN TECH</h1>
+            <h4>Rules and Regulations</h4>
+            <p>The following rules and regulations shall impose on all employees of the company. Every employee must follow and obey the act, guidance, policy, rules, and regulations set by the company authority and applicable from time to time.</p><br>
+            <ol>
+                <li>1.Every staff will be bound to obey all the regulations set by the official authority.</li>
+                <li>2.Office attending time is exactly 9:00 A.M and departure time 6.00 P.M., but the departure time can be extended due to massive pending tasks.</li>
+                <li>3.Every Assigned work must be completed on time before leaving the office. In emergencies, the task can be done from home, with the CEO’s permission</li>
+                <li>4.Every employee will recheck their tasks in the WhatsApp group, Drive to confirm that they are done before leaving the office.</li>
+                <li>5.Employees need to check the official email 2/3 times before sending them. Additionally, they can ask coworkers or CEO if there’s any confusion issue.</li>
+                <li>6.In the case of student files, employees must need to check and verify all documents before emailing them to the university.</li>
+                <li>7.If any employee wants to leave the job, he/she must submit an official resignation letter 1 month before resignation.</li>
+                <li>8.Regarding office leave, every employee must submit an official leave application containing: leave duration (exact date), reason, etc. After the application acceptance, he/she can take a leave regardless of medical leave. Notice if any employee doesn’t attend the office without an application, their salary can be deducted.</li>
+                <li>9.Sunday is a weekly off day. But in terms of emergencies or essential office tasks, employees may have to work from home or even come to the office. (Office will pay for overtime)</li>
+                <li>10.Any office tool (Laptop, Documents etc.) is forbidden to take home without permission.</li>
+            </ol>
+        </div>
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../Home/scripts.js"></script>
+	<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
